@@ -1,5 +1,0 @@
-streamlit
-tensorflow==2.16.1
-pillow
-numpy>=1.21.0,<2.0
-pandas
