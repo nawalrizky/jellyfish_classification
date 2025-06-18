@@ -69,12 +69,12 @@ st.markdown("""
 
 # Define classes - updated to match model's 6 output classes
 CLASS_NAMES = [
-   'Moon_Jellyfish',
-   'Barrel_Jellyfish',
-   'Blue_Jellyfish',
-   'Compass_Jellyfish',
-   'Lion_Mane_Jellyfish',
-   'Mauve_Stinger_Jellyfish',
+    'barrel_jellyfish',
+    'compass_jellyfish', 
+    'lions_mane_jellyfish',
+    'moon_jellyfish',
+    'mauve_stinger_jellyfish',  # Added additional class
+    'crystal_jellyfish'         # Added additional class
 ]
 
 # Sidebar with information
@@ -86,7 +86,7 @@ with st.sidebar:
     3. **View** the prediction results
     
     **Supported species:**
-     - 🌙 Moon Jellyfish
+    - 🌙 Moon Jellyfish
     - 🪣 Barrel Jellyfish
     - 💎 Blue Jellyfish             
     - 🧭 Compass Jellyfish  
