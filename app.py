@@ -86,12 +86,13 @@ with st.sidebar:
     3. **View** the prediction results
     
     **Supported species:**
+     - 🌙 Moon Jellyfish
     - 🪣 Barrel Jellyfish
+    - 💎 Blue Jellyfish             
     - 🧭 Compass Jellyfish  
     - 🦁 Lion's Mane Jellyfish
-    - 🌙 Moon Jellyfish
     - 🟣 Mauve Stinger Jellyfish
-    - 💎 Crystal Jellyfish
+  
     """)
     
     st.markdown("### 📸 Image Tips")
