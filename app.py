@@ -69,12 +69,12 @@ st.markdown("""
 
 # Define classes - updated to match model's 6 output classes
 CLASS_NAMES = [
-    'barrel_jellyfish',
-    'compass_jellyfish', 
-    'lions_mane_jellyfish',
-    'moon_jellyfish',
-    'mauve_stinger_jellyfish',  # Added additional class
-    'crystal_jellyfish'         # Added additional class
+   'Moon_Jellyfish',
+   'Barrel_Jellyfish',
+   'Blue_Jellyfish',
+   'Compass_Jellyfish',
+   'Lion_Mane_Jellyfish',
+   'Mauve_Stinger_Jellyfish',
 ]
 
 # Sidebar with information
