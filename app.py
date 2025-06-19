@@ -110,7 +110,7 @@ with st.sidebar:
 def load_model_from_file():
     """Load the trained model"""
     try:
-        model = load_model('model_jellyfish.h5')
+        model = load_model('model_jellyfish_v2.h5')
         return model
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
