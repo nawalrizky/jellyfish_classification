@@ -69,12 +69,12 @@ st.markdown("""
 
 # Define classes - updated to match model's 6 output classes
 CLASS_NAMES = [
+    'moon_jellyfish',
     'barrel_jellyfish',
+    'blue_jellyfish',
     'compass_jellyfish', 
     'lions_mane_jellyfish',
-    'moon_jellyfish',
-    'mauve_stinger_jellyfish',  # Added additional class
-    'crystal_jellyfish'         # Added additional class
+    'mauve_stinger_jellyfish'
 ]
 
 # Sidebar with information
@@ -110,8 +110,14 @@ with st.sidebar:
 def load_model_from_file():
     """Load the trained model"""
     try:
-        model = load_model('model_jellyfish_v2.h5')
-        return model
+        # Try to load the v2 model first
+        try:
+            model = load_model('model_jellyfish_v2.h5')
+            return model
+        except:
+            # Fall back to the original model if v2 is not found
+            model = load_model('model_jellyfish.h5')
+            return model
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
         return None
