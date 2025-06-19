@@ -111,13 +111,13 @@ def load_model_from_file():
     """Load the trained model"""
     try:
         # Try to load the v2 model first
-        try:
-            model = load_model('model_jellyfish_v2.h5')
-            return model
-        except:
-            # Fall back to the original model if v2 is not found
+        # try:
             model = load_model('model_jellyfish.h5')
             return model
+        # except:
+        #     # Fall back to the original model if v2 is not found
+        #     model = load_model('model_jellyfish.h5')
+        #     return model
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
         return None
